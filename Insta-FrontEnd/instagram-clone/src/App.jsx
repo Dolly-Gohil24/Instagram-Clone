@@ -12,10 +12,9 @@ import UserState from "../Context/UserState";
 import "./App.css";
 import PicModal from "../Components/PicModal";
 import CreatePost from "../Components/CreatePost";
+import PostHome from "../Components/PostHome";
 
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
     <>
       <UserState>
@@ -29,6 +28,7 @@ function App() {
           <Route exact path="/profile" element={<Profile />}></Route>
           <Route exact path="/picModal" element={<PicModal />}></Route>
           <Route exact path="/createPost" element={<CreatePost />}></Route>
+          <Route exact path="/postHome" element={<PostHome />}></Route>
         </Routes>
       </UserState>
     </>

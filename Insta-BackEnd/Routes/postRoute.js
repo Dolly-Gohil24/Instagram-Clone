@@ -16,4 +16,11 @@ router.post("/createPost", fetchUser, async (req, res) => {
   res.send(post);
 });
 
+router.get("/allPost", fetchUser, async (req, res) => {
+  Posts.find()
+    .populate("postedBy")
+    .then((posts) => {
+      res.json(posts);
+    });
+});
 module.exports = router;
