@@ -8,7 +8,10 @@ const UserState = (props) => {
   const navigate = useNavigate();
   const [loguser, setLoguser] = useState([]);
   const [gallery, setGallery] = useState([]);
-  const [allposts, setAllposts] = useState([]);
+  const initialvalue = [];
+  const [allposts, setAllposts] = useState(initialvalue);
+
+  // const [allposts, setAllposts] = useState([]);
   const config = {
     headers: {
       "Content-Type": "application/json",
@@ -115,10 +118,14 @@ const UserState = (props) => {
     axios
       .get("http://localhost:5000/api/post/allPost", editconfig)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setAllposts(res.data);
       });
   };
+
+  // const addPostLike = (data) => {
+  //   setAllposts(allposts.concat(data));
+  // };
 
   // const uploadPic = (id, profilepic) => {
   //   axios
@@ -154,6 +161,7 @@ const UserState = (props) => {
           gallery,
           getAllPosts,
           allposts,
+          // addPostLike,
         }}
       >
         {props.children}

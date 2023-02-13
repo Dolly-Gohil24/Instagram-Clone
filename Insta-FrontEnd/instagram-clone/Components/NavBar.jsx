@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import UserContext from "../Context/UserContext";
 // import "./NavBar.css";
 
 const NavBar = () => {
+  const context = useContext(UserContext);
+  const { getAllPosts } = context;
+
+  const openHome = () => {
+    getAllPosts();
+  };
   return (
     <>
       <div className="flex h-full shadow-md fixed px-1 border-r border-white/60 bg-black/5 justify-center  w-16  lg:w-56 2xl:w-96">
@@ -24,6 +31,7 @@ const NavBar = () => {
                 to="/postHome"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="primary"
+                onClick={openHome}
               >
                 <svg
                   // style={{color white}}
@@ -31,7 +39,7 @@ const NavBar = () => {
                   width="24"
                   height="24"
                   fill="currentColor"
-                  class="bi bi-house-fill text-white"
+                  className="bi bi-house-fill text-white"
                   viewBox="0 0 16 16"
                 >
                   {" "}

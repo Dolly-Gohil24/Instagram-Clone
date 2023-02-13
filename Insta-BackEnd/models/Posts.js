@@ -15,6 +15,7 @@ const PostSchema = new Schema({
     type: ObjectId,
     ref: "user",
   },
+  like: [{ type: ObjectId, ref: "user" }],
 });
 
 const Posts = mongoose.model("posts", PostSchema);
