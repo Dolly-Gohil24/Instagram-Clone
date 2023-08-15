@@ -7,7 +7,7 @@ import UserContext from "../Context/UserContext";
 const EditModal = () => {
   const navigate = useNavigate();
   const context = useContext(UserContext);
-  const { editProfile, loguser } = context;
+  const { editProfile } = context;
 
   const profileDetail = JSON.parse(localStorage.getItem("user-detail"));
   // console.log(profileDetail);
@@ -27,7 +27,7 @@ const EditModal = () => {
   return (
     <div className="fixed bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center">
       <div className="fixed inset-0 transition-opacity">
-        <div className="absolute inset-0 bg-gray-500 bg-opacity-80"></div>
+        <div className="absolute inset-0 bg-gray-500 bg-opacity-40"></div>
       </div>
       <div className="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
         <div className="bg-white p-6 sm:p-10">

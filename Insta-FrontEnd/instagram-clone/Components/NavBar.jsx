@@ -27,7 +27,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                className="flex items-center mt-16 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600  transition duration-300 ease-in-out"
+                className="flex items-center mt-16 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-500  transition duration-300 ease-in-out"
                 to="/postHome"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="primary"
@@ -59,7 +59,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                className="flex items-center mt-8 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600  transition duration-300 ease-in-out"
+                className="flex items-center mt-8 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-900  transition duration-300 ease-in-out"
                 to="/home"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="primary"
@@ -87,7 +87,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                className="flex items-center mt-8 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-purple-800"
+                className="flex items-center mt-8 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-purple-500"
                 to="/logout"
                 data-mdb-ripple="true"
                 data-mdb-ripple-color="primary"
@@ -117,7 +117,7 @@ const NavBar = () => {
             </li>
             <li>
               <Link
-                className="flex items-center mt-8 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-white"
+                className="flex items-center mt-8 pt-1 text-lg overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-purple-900"
                 to="/createPost"
                 // href="#"
                 // onClick={handleImg}

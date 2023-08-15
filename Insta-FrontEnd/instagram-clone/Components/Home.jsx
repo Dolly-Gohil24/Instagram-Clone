@@ -1,7 +1,6 @@
 import React from "react";
 import Profile2 from "./Profile2";
 import NavBar from "./NavBar";
-// import Profile from "./Profile";
 
 const Home = () => {
   return (

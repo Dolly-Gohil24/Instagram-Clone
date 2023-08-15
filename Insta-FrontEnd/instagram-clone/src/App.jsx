@@ -5,7 +5,6 @@ import EditModal from "../Components/EditModal";
 import Home from "../Components/Home";
 import LogIn from "../Components/LogIn";
 import NavBar from "../Components/NavBar";
-import Profile from "../Components/Profile";
 import SignUp from "../Components/SignUp";
 import LogOut from "../Components/LogOut";
 import UserState from "../Context/UserState";
@@ -13,6 +12,7 @@ import "./App.css";
 import PicModal from "../Components/PicModal";
 import CreatePost from "../Components/CreatePost";
 import PostHome from "../Components/PostHome";
+import Profile2 from "../Components/Profile2";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/logout" element={<LogOut />}></Route>
           <Route exact path="/home" element={<Home />}></Route>
           <Route exact path="/editModal" element={<EditModal />}></Route>
-          <Route exact path="/profile" element={<Profile />}></Route>
+          <Route exact path="/profile" element={<Profile2 />}></Route>
           <Route exact path="/picModal" element={<PicModal />}></Route>
           <Route exact path="/createPost" element={<CreatePost />}></Route>
           <Route exact path="/postHome" element={<PostHome />}></Route>

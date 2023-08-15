@@ -10,7 +10,8 @@ const CreatePost = () => {
   const [image, setImage] = useState("");
 
   const [pic, setPic] = useState(
-    "https://www.oberlo.com/media/1603954288-img0332-1.png?w=1824&fit=max"
+    // "https://www.oberlo.com/media/1603954288-img0332-1.png?w=1824&fit=max"
+    "https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg"
   );
   const context = useContext(UserContext);
   const { createPost } = context;
@@ -59,11 +60,11 @@ const CreatePost = () => {
       <div
         id="popup-modal"
         tabIndex="-1"
-        className="justify-center items-center flex overflow-x-hidden  bg-black bg-opacity-50 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+        className=" justify-center items-center flex overflow-x-hidden  bg-black bg-opacity-50 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
       >
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
           {/*content*/}
-          <div className="flex flex-row border-0 rounded-lg shadow-lg relative  w-full bg-white outline-none focus:outline-none">
+          <div className="bg-white rounded-lg md:max-w-md md:mx-auto p-4 fixed inset-x-0 bottom-0 z-50 mb-4 mx-4 md:relative">
             <div className="flex flex-col items-center">
               <img
                 src={pic}

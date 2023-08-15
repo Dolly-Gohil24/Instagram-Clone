@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import UserContext from "./UserContext";
-import Profile from "../Components/Profile";
 import { useNavigate } from "react-router-dom";
 
 const UserState = (props) => {
@@ -110,6 +109,7 @@ const UserState = (props) => {
         editconfig
       )
       .then((res) => {
+        console.log(res.data.post);
         setGallery(res.data.post);
       });
   };

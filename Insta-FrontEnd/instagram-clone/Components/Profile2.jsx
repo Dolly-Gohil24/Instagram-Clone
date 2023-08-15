@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const Profile2 = () => {
   const profileDetail = JSON.parse(localStorage.getItem("user-detail"));
   const piclink =
-    "https://www.oberlo.com/media/1603954288-img0332-1.png?w=1824&fit=max";
+    "https://cdn.vectorstock.com/i/preview-1x/13/04/male-profile-picture-vector-2041304.webp";
   const [changeImg, setChangeImg] = useState(false);
   const navigate = useNavigate();
   const context = useContext(UserContext);
@@ -34,10 +34,10 @@ const Profile2 = () => {
        bg-black/90 w-10/12 ml-24 lg:ml-56 h-screen"
         // w-10/12 ml-24 lg:ml-56 // ml-16 lg:ml-56 2xl:justify-center 2xl:items-center  w-10/12 2xl:w-8/12 2xl:ml-96"
       >
-        <div className="flex mt-10 w-full pb-16">
+        <div className="flex mt-10 w-full h-30 pb-16">
           <div className="flex w-4/5 justify-center items-center ">
             <img
-              className=" w-28 lg:w-40 h-28 lg:h-40 m-8 cursor-pointer rounded-full object-cover"
+              className=" w-full cursor-pointer rounded-full object-cover"
               src={
                 profileDetail.profilepic ? profileDetail.profilepic : piclink
               }
@@ -66,7 +66,7 @@ const Profile2 = () => {
               <div className=" hidden lg:block mt-7 justify-evenly">
                 <span className=" inline-block text-xl text-white ">
                   {" "}
-                  16 Posts
+                  {gallery.length} Posts
                 </span>{" "}
                 <span className=" inline-block text-xl text-white ml-16 ">
                   1M Follower
